@@ -1,0 +1,64 @@
+body {
+      background-color: rgb(5, 23, 30);
+      margin: 0;
+      color: white;
+}
+
+#content {
+      display: flex;
+}
+
+#left-border {
+      width: 40%;
+}
+
+#right-border {
+      width: 40%;
+}
+
+.book-section {
+      background-color: rgb(13, 50, 64);
+      width: 300px;
+      height: 600px;
+      margin: 30px 0;
+      border-radius: 8px;
+}
+
+.title-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.separator {
+      background-color: rgba(0, 255, 255, 0.362);
+      height: 2px;
+}
+
+.cover-section {
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.cover {
+      height: 80px;
+      width: auto;
+}
+
+.price-likes-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      heigth: 40px;
+}
+
+h4 {
+      color: rgb(210, 85, 50);
+      font-size: 24px;
+}
+
+.font-weight-bold {
+      font-weight: bold;
+}
