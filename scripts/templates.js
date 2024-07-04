@@ -11,14 +11,14 @@ function generateBookAreaHTML(book, i) {
             <div class="separator"><div>
             <section class="info-section">
                 <div class="price-likes-container">
-                    <h4>${book.price} €</h4>
+                    <h4>${book.price.toFixed(2)} €</h4>
                     <div class="likes-container">
                         <p>${book.likes}</p>
-                        <div id="${i}-like-button"></div>
+                        <div id="${i}-like-button-container"></div>
                     </div>
                 </div>
                 <div class="info-container">
-                    <table>
+                    <table class="info-table">
                         <tr>
                             <td class="font-weight-bold">Author</td>
                             <td>: ${book.author}</td>
@@ -34,7 +34,26 @@ function generateBookAreaHTML(book, i) {
                     </table>
                 </div>
             </section>
+            <div class="separator"></div>
+            <section class="comment-section">
+                <h5 class="comment-section-headline">Kommentare:</h5>
+                <div class="comment-table-container">
+                    <table>
+                        <tbody id="${i}-comment-table">
+                        </tbody>
+                    </table>
+                </div>
+            </section>
             
         </div>
+    `;
+}
+
+function generateCommentTableHTML(book, i, commentIndex) {
+      return /*html*/ `
+        <tr>
+            <td>[${book.comments[commentIndex].name}]</td>
+            <td>: ${book.comments[commentIndex].comment}</td>
+        </tr>
     `;
 }
