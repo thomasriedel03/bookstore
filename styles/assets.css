@@ -1,0 +1,49 @@
+/* Scrollbars */
+
+/* global */
+/* width */
+::-webkit-scrollbar {
+      width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px grey;
+      border-radius: 10px;
+      background: rgba(15, 35, 35);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+      background: rgba(0, 255, 255, 0.362);
+      border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+      background: rgb(0, 255, 255);
+}
+
+/* comment-section */
+/* width */
+.comment-table-container::-webkit-scrollbar {
+      width: 5px;
+}
+
+/* Track */
+.comment-table-container::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px grey;
+      border-radius: 10px;
+      background: rgba(15, 35, 35);
+}
+
+/* Handle */
+.comment-table-container::-webkit-scrollbar-thumb {
+      background: rgba(0, 255, 255, 0.362);
+      border-radius: 10px;
+}
+
+/* Handle on hover */
+.comment-table-container::-webkit-scrollbar-thumb:hover {
+      background: rgb(0, 255, 255);
+}

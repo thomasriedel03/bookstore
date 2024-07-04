@@ -43,6 +43,10 @@ function generateBookAreaHTML(book, i) {
                         </tbody>
                     </table>
                 </div>
+                <div class="add-comment-container">
+                    <input class="add-comment-input" placeholder="Schreibe einen Kommentar..." id="${i}-add-comment-input">
+                    <img onclick="addComment(${i})" id="${i}-add-comment-button" class="add-comment-button" src="graphics/telegram-pfeil.png">
+                </div>
             </section>
             
         </div>
