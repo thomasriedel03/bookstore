@@ -56,7 +56,7 @@ function generateBookAreaHTML(book, i) {
 function generateCommentTableHTML(book, i, commentIndex) {
       return /*html*/ `
         <tr>
-            <td>[${book.comments[commentIndex].name}]</td>
+            <td class="comment-name">[${book.comments[commentIndex].name}]</td>
             <td>: ${book.comments[commentIndex].comment}</td>
         </tr>
     `;
